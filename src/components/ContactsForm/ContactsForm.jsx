@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import { Button } from './ContactsForm.styled';
+
 export const ContactForm = ({ onSubmit }) => {
   const [inputValues, setInputValues] = useState({ name: '', number: '' });
 
@@ -48,9 +50,7 @@ export const ContactForm = ({ onSubmit }) => {
         />
       </label>
       <br />
-      <button type="submit" style={{ marginLeft: 30, fontSize: 16 }}>
-        Add contact
-      </button>
+      <Button type="submit">Add contact</Button>
     </form>
   );
 };
