@@ -1,11 +1,11 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
 
 const contactsInitialState = [
-  { id: 0, text: 'Viktor Mashyka', passive: false },
-  { id: 1, text: 'Yurii Mashyka', passive: false },
-  { id: 2, text: 'Roman Voloshyn', passive: false },
-  { id: 3, text: 'Volodymyr Khoptynec', passive: false },
-  { id: 4, text: 'Dmytro Khoptynec', passive: false },
+  { id: 0, name: 'Viktor Mashyka', number: '0506644672', passive: false },
+  { id: 1, name: 'Yurii Mashyka', number: '0506644673', passive: false },
+  { id: 2, name: 'Roman Voloshyn', number: '0506644674', passive: false },
+  { id: 3, name: 'Volodymyr Khoptynec', number: '0506644675', passive: false },
+  { id: 4, name: 'Dmytro Khoptynec', number: '0506644676', passive: false },
 ];
 
 const contactsSlice = createSlice({
@@ -16,16 +16,16 @@ const contactsSlice = createSlice({
       reducer(state, action) {
         return [...state, action.payload];
       },
-      prepare(text) {
+      prepare(name, number) {
         return {
-          payload: { text, id: nanoid(), passive: false },
+          payload: { id: nanoid(), name, number, passive: false },
         };
       },
     },
 
     deleteContact: {
       reducer(state, action) {
-        return state.filter(task => task.id !== action.payload);
+        return state.filter(contact => contact.id !== action.payload);
       },
     },
   },
