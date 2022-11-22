@@ -132,6 +132,14 @@ export const Phonebook = () => {
   //     contact.name.toLowerCase().includes(normalizeToLowerCase)
   //   );
   // };
+  //   const getVisibleContacts = () => {
+  //     // const normalizeToLowerCase = filterContact.toLowerCase();
+  //     return contacts.filter(contact =>
+  //       contact.name.toLowerCase().includes(filterContact.toLowerCase())
+  //     );
+  // };
+
+  // filterContact = e.currentTarget.value
 
   // const removeContact = id => {
   //   setContacts(prevContacts =>
