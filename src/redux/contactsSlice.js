@@ -14,17 +14,6 @@ const contactsSlice = createSlice({
   name: 'contacts',
   initialState: contactsInitialState,
   reducers: {
-    // addContact: {
-    //   reducer(state, action) {
-    //     return [...state, action.payload];
-    //   },
-    //   prepare(name, number) {
-    //     return {
-    //       payload: { id: nanoid(), name, number, passive: false },
-    //     };
-    //   },
-    // },
-
     addContact: {
       reducer(state, action) {
         return [...state, action.payload];
@@ -47,3 +36,14 @@ const contactsSlice = createSlice({
 export const { addContact, deleteContact, getVisibleContacts } =
   contactsSlice.actions;
 export const contactsReducer = contactsSlice.reducer;
+
+    // addContact: {
+    //   reducer(state, action) {
+    //     return [...state, action.payload];
+    //   },
+    //   prepare(name, number) {
+    //     return {
+    //       payload: { id: nanoid(), name, number, passive: false },
+    //     };
+    //   },
+    // },
