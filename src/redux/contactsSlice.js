@@ -28,13 +28,13 @@ const contactsSlice = createSlice({
         return state.filter(contact => contact.id !== action.payload);
       },
     },
-    getVisibleContacts: {
-      reducer(state, action) {
-        return state.filter(contact =>
-          contact.name.toLowerCase().includes(action.payload.toLowerCase())
-        );
-      },
-    },
+    // getVisibleContacts: {
+    //   reducer(state, action) {
+    //     return state.filter(contact =>
+    //       contact.name.toLowerCase().includes(action.payload.toLowerCase())
+    //     );
+    //   },
+    // },
 
     // const getVisibleContacts = () => {
     //   const normalizeToLowerCase = filterContacts.toLowerCase();
@@ -50,7 +50,6 @@ const contactsSlice = createSlice({
     //     );
     //   },
     // },
-    
   },
 });
 
