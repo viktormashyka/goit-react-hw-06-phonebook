@@ -16,19 +16,3 @@ const filterContactSlice = createSlice({
 
 export const { changeFilter } = filterContactSlice.actions;
 export const filterContactReducer = filterContactSlice.reducer;
-
-// changeFilter: {
-//   reducer(state, action) {
-//     return state.filter(contact =>
-//       //   contact.name.toLowerCase().includes(filterContact.toLowerCase())
-//       contact.name.toLowerCase().includes(action.payload.toLowerCase())
-//     );
-//   },
-// },
-
-//   setStatusFilter(state, action) {
-//     return {
-//       ...state,
-//       status: action.payload,
-//     };
-//   },

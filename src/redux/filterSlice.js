@@ -23,13 +23,3 @@ const filterSlice = createSlice({
 
 export const { setStatusFilter } = filterSlice.actions;
 export const filterReducer = filterSlice.reducer;
-
-// const changeFilter = evt => {
-//   setFilterContacts(evt.currentTarget.value);
-// };
-
-//     deleteContact: {
-//   reducer(state, action) {
-//     return state.filter(contact => contact.id !== action.payload);
-//   },
-// },
