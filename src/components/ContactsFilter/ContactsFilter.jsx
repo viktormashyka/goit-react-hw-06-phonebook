@@ -1,9 +1,9 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import { changeFilter } from 'redux/filterContactSlice';
 
-export const FilterBox = ({ value, onChange }) => {
+export const FilterBox = ({ value }) => {
   const dispatch = useDispatch();
 
   const handleChangeFilter = evt => {
